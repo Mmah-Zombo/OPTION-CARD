@@ -5,14 +5,19 @@
 }
 
 body {
-    background-color: burlywood;
+    background-color: rgb(62, 47, 75);
     display: border-box;
 }
 
 .card {
-    background-color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4),
+    inset 0 0 1px  rgba(255, 255, 255, 0.92);
     width: 500px;
-    height: 400px;
+    height: 403.5px;
     display: block;
     align-content: center;
     justify-content: center;
@@ -22,37 +27,46 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 16px;
+    overflow: hidden;
 }
 
 .card .opt {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 150px;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    top: 5%;
     padding: 30px 20px 30px 50px;
 }
 
-/*.card #option-2 {
-    grid-gap: 130px;
-}
-.card #option-2 .text {
-    width: 140px;
-    background-color: aqua;
+.card .opt .text .hope {
+    text-align: left;
+    font-family: Goudy Old Style;
+    justify-content: space-around;
+    position: relative;
 }
 
-.card #option-3 {
-    grid-gap: 130px;
+.card .opt:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05),
+    inset -1px 0 1px rgba(255, 255, 255, 0.9),
+    inset 8px 0 1px rgb(55, 31, 64);
 }
-.card #option-3 .text {
-    width: 140px;
-}*/
+
 .text {
     font-size: 10px;
+    display: flex;
 }
+
+p {
+    font-size: 14px;
+}
+
+.text img {
+    margin-right: 50px;
+    color: aquamarine;
+}
+
 img {
     width: 20px;
+    height: 20px;
+    margin-top: 10px;
 }
