@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-color: burlywood;
-    display: bord;
+    display: border-box;
 }
 
 .card {
@@ -12,9 +14,9 @@ body {
     width: 500px;
     height: 400px;
     display: block;
+    align-content: center;
+    justify-content: center;
     text-align:center;
-    align-content: space-between;
-    justify-content: space-evenly;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,10 +24,35 @@ body {
     border-radius: 16px;
 }
 
-.card opt {
-    display: flex;
-    padding: 60px;
+.card .opt {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    top: 5%;
+    padding: 30px 20px 30px 50px;
+}
+
+/*.card #option-2 {
+    grid-gap: 130px;
+}
+.card #option-2 .text {
+    width: 140px;
+    background-color: aqua;
+}
+
+.card #option-3 {
+    grid-gap: 130px;
+}
+.card #option-3 .text {
+    width: 140px;
+}*/
+.text {
+    font-size: 10px;
 }
 img {
-    width: 8%;
+    width: 20px;
 }
