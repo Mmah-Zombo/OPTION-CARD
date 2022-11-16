@@ -9,10 +9,6 @@ body {
     display: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
 .card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%,
     rgba(255, 255, 255, 0.2) 25%,
@@ -20,8 +16,8 @@ a {
     rgba(255, 255, 255, 0) 100%);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.4),
     inset 0 0 1px  rgba(255, 255, 255, 0.92);
-    width: 500px;
-    height: 403.5px;
+    width: 800px;
+    height: 700px;
     display: block;
     align-content: center;
     justify-content: center;
@@ -34,42 +30,21 @@ a {
     overflow: hidden;
 }
 
-.card .opt a {
+.card .mode form div {
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 30px 20px 30px 50px;
+    padding: 30px 100px 30px 50px;
 }
 
-.card .opt .text .hope {
-    text-align: left;
-    font-family: Goudy Old Style;
-    justify-content: space-around;
-    position: relative;
-}
-
-.card .opt:hover {
+.card .mode form div:hover {
     background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.05),
     inset 0 0 1px rgba(255, 255, 255, 0.9),
     inset 10px 0 1px rgb(55, 31, 64);
 }
 
-.text {
-    font-size: 10px;
-    display: flex;
-}
-
-p {
-    font-size: 14px;
-}
-
-.text img {
-    margin-right: 50px;
-}
-
-img {
-    width: 30px;
-    height: 30px;
-    margin-top: 6px;
+input {
+    color: black;
+    text-decoration: none;
 }
